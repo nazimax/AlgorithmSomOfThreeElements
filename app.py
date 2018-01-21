@@ -1,7 +1,7 @@
 import math
 
 
-def drawEtage(etage, T):
+def drawStage(etage, T):
     begin = 2 ** etage - 1
     end = 2 * begin
     i = begin
@@ -20,11 +20,11 @@ def drawTree(T):
     nbrEtage =math.floor(math.log(len(T),2))
 
     while i <= nbrEtage:
-        drawEtage(i, T)
+        drawStage(i, T)
         i=i+1
 
 
-# TODO finish heapsort
+
 def left(i):
     if i == 0:
         return 0
